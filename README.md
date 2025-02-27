@@ -3,8 +3,6 @@
 Este é um projeto de API para gerenciamento de transações financeiras, desenvolvido com Node.js, Express e MongoDB.
 
 ## Estrutura do Projeto
-* .env  
-* .gitignore  
 * controllers/  
     - authController.js
     - transactionController.js 
@@ -22,6 +20,8 @@ Este é um projeto de API para gerenciamento de transações financeiras, desenv
 * validators/
     - transactionValidator.js
     - userValidator.js
+* .env  
+* .gitignore  
 * package.json
 * server.js
 * swagger.js
