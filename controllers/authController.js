@@ -42,7 +42,7 @@ const login = async (req, res) => {
     }
 
     //Gerar Access Token(expira rápido 15 minutos)
-    const accessToken = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "15m" });
+    const accessToken = `Bearer ${jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "15m" })}`;
 
     //Gerar o Refresh Token(expira em 7 dias)
     const refreshToken = jwt.sign({ id: user._id }, process.env.REFRESH_SECRET, { expiresIn: "7d" });

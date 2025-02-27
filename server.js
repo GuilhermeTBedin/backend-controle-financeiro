@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const setupSwagger = require("./swagger");
 
 const app = express();
 app.use(express.json());
@@ -24,6 +25,8 @@ app.use("/", transactionsRoutes);
 app.get("/", (req, res) => {
   res.send("API Controle Financeiro Rodando...");
 });
+
+setupSwagger(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
