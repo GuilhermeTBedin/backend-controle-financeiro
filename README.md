@@ -2,30 +2,6 @@
 
 Este é um projeto de API para gerenciamento de transações financeiras, desenvolvido com Node.js, Express e MongoDB.
 
-## Estrutura do Projeto
-* controllers/  
-    - authController.js
-    - transactionController.js 
-* middlewares/
-    - authMiddleware.js
-    - validateRequest.js
-    - validateUser.js
-* models/
-    - RefreshToken.js
-    - Transaction.js
-    - User.js
-* routes/
-    - authRoutes.js
-    - transactionRoutes.js
-* validators/
-    - transactionValidator.js
-    - userValidator.js
-* .env  
-* .gitignore  
-* package.json
-* server.js
-* swagger.js
-
 ## Instalação
 
 1. Clone o repositório:  
