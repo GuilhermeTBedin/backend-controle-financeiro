@@ -43,8 +43,3 @@ Transações
   * GET /transactions/{id}: Busca uma transação por ID.
   * PUT /transactions/{id}: Atualiza uma transação por ID.
   * DELETE /transactions/{id}: Deleta uma transação por ID.
-
-## Testes
-
-Para rodar os testes, execute:   
-  `npm test`
